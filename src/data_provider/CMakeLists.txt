@@ -14,15 +14,15 @@
 
 add_library(dataprovider AriaDataProvider.h AriaStreamIds.h utils.h utils.cpp)
 target_link_libraries(dataprovider
-    PUBLIC
+        PUBLIC
         players
         sensors
         vrsdataprovider
         Sophus::Sophus)
 target_include_directories(dataprovider
-    PUBLIC
+        PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR} "../"
-    PRIVATE
+        PRIVATE
         "../third_party/"#fast-cpp-csv-parser"
         )
 
