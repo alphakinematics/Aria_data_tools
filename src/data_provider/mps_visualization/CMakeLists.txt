@@ -17,7 +17,7 @@ find_package(Threads REQUIRED)
 
 add_executable(mps_eyegaze_viewer main_eyegaze.cpp AriaViewer.cpp AriaViewer.h)
 target_link_libraries(mps_eyegaze_viewer
-    PRIVATE
+        PRIVATE
         aria_viewer_lib
         mps_io
         ${Pangolin_LIBRARIES}
@@ -25,6 +25,6 @@ target_link_libraries(mps_eyegaze_viewer
 
 add_executable(mps_trajectory_viewer main_trajectory.cpp)
 target_link_libraries(mps_trajectory_viewer
-    PRIVATE
+        PRIVATE
         mps_io
         ${Pangolin_LIBRARIES})
